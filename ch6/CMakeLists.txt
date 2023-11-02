@@ -6,7 +6,7 @@
 # one task don't affect another task.
 
 cmake_minimum_required(VERSION 3.10)
-project(ch5)
+project(ch6)
 
 set(CMAKE_CXX_STANDARD 14)
 
