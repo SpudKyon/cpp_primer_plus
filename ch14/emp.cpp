@@ -94,9 +94,9 @@ highfink::highfink(const abstr_emp &e, const std::string &rpo, int ico) : manage
 
 highfink::highfink(const fink &f, int ico) : manager(f, ico), fink(f) {}
 
-highfink::highfink(const manager &m, const std::string &rpo) : manager(m), fink(m, rpo) {}
+highfink::highfink(const manager &m, const std::string &rpo) :abstr_emp(m), manager(m), fink(m, rpo) {}
 
-highfink::highfink(const highfink &h): manager(h), fink(h) {}
+highfink::highfink(const highfink &h):abstr_emp(h), manager(h), fink(h) {}
 
 void highfink::ShowAll() const {
     manager::ShowAll();
